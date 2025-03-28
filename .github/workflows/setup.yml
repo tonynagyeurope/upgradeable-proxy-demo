@@ -1,0 +1,39 @@
+name: CI/CD
+
+# We run this test only for push events
+on:
+  push:
+    branches: [main]
+
+# Setup jobs
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Download the code
+      - uses: actions/checkout@v3
+
+      # 2. Node.js setup
+      - name: Node.js setup
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # Hardhat works fine with this version
+
+      # 3. Install the dependecies
+      - name: Installing dependencies
+        run: npm install
+
+      # 4. Compile the project
+      - name: Compiling project
+        run: npx hardhat compile    
+
+      # 5. Deploying the proxy and the newest version of the impl. contract
+      - name: Deploying contract V2
+        run: npx hardhat run scripts/deploy_upgradeable.js
+
+      # 6. Testing methods
+      # - name: Testing methods and making gas report
+      #  run: npx hardhat test
+
+
