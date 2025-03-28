@@ -1,0 +1,34 @@
+{
+  "name": "upgradeable-proxy-demo",
+  "version": "1.0.0",
+  "description": "Upgradeable Proxy Demo",
+  "keywords": [
+    "upgradeable",
+    "proxy",
+    "contract"
+  ],
+  "homepage": "https://github.com/tonynagyeurope/upgradeable-proxy-demo#readme",
+  "bugs": {
+    "url": "https://github.com/tonynagyeurope/upgradeable-proxy-demo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonynagyeurope/upgradeable-proxy-demo.git"
+  },
+  "license": "MIT",
+  "author": "Tony Nagy",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "hardhat": "^2.22.19"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@openzeppelin/contracts-upgradeable": "^5.2.0",
+    "@openzeppelin/hardhat-upgrades": "^3.9.0",
+    "hardhat-deploy": "^1.0.1"
+  }
+}
