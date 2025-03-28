@@ -23,6 +23,10 @@ Upgradeable contracts allow modifications to contract logic without losing the u
 
     Deployment Verification: A screenshot (deployed-contracts.png) that confirms successful deployment on Hardhat.
 
+## Screenshot About Deployed Proxy and Implementation contracts
+
+![deployed-contracts](https://github.com/user-attachments/assets/5d226b10-38da-4973-a630-98b1bd5c2322)
+
 ## Prerequisites
 
 Before proceeding, ensure you have the following installed:
