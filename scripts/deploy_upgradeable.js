@@ -13,7 +13,7 @@ const { ethers, upgrades } = require("hardhat");
 
 // Hardcoded deployer account (private key)
 // Replace "0xYOUR_PRIVATE_KEY_HERE" with your actual private key.
-const DEPLOYER_PRIVATE_KEY = "0xdf57089febbacf7ba0bc227dafbffa9fc08a93fdc68e1e42411a14efcf23656e";
+const DEPLOYER_PRIVATE_KEY = process.env.DEPLOYER_PRIVATE_KEY;
 
 async function main() {
     try {
